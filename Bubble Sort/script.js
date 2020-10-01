@@ -44,6 +44,7 @@ function drawRects () {
 function swap(arr, i, j) {
     var t_h = arr[i].h
     arr[j].h = t_h;
+    arr[i].h = arr[j].h;
 }
 
 window.requestAnimFrame = (function() {
