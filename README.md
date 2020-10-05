@@ -4,7 +4,6 @@
 
 <br /> 
 <img align="right" src="https://hacktoberfestswaglist.com/img/Hacktoberfest_20.jpg" width="200px" height="200px"/>
-<img align="right" src="https://hacktoberfestswaglist.com/img/Hacktoberfest_20.jpg" width="200px" height="200px"/>
 <hr />
 
 
