@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2196F3;
+}
+.map svg {
+  fill: #1F8DE4;
+}
+
+.marker {
+  position: absolute;
+  top: 151px;
+  left: 176px;
+  cursor: pointer;
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
+  opacity: 1;
+  z-index: 5;
+  -webkit-transition: all .5s ease .4s;
+  transition: all .5s ease .4s;
+}
+.marker.inactive {
+  opacity: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-transform: perspective(600px) rotateY(-90deg);
+          transform: perspective(600px) rotateY(-90deg);
+}
+.marker svg {
+  fill: #FFCC30;
+  -webkit-animation: hovering 1s ease-in-out infinite alternate;
+          animation: hovering 1s ease-in-out infinite alternate;
+}
+.marker .shadow {
+  width: 18px;
+  height: 4px;
+  background: #1B7AC7;
+  margin: 5px auto 0 auto;
+  border-radius: 50%;
+  -webkit-animation: shadowing 1s ease-in-out infinite alternate;
+          animation: shadowing 1s ease-in-out infinite alternate;
+}
+
+.card {
+  position: absolute;
+  background: #fff;
+  top: 105px;
+  left: 80px;
+  width: 240px;
+  height: 190px;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  -webkit-transform: perspective(600px) rotateY(90deg);
+          transform: perspective(600px) rotateY(90deg);
+  z-index: 10;
+  pointer-events: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.card.active {
+  opacity: 1;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
+  pointer-events: all;
+}
+.card p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  margin: 2px 0;
+}
+.card p.name {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 600;
+}
+.card .actions {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+.card .actions a {
+  float: left;
+  width: 50%;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  color: #1F8DE4;
+  font-weight: 400;
+  font-size: 12px;
+}
+.card .actions .divide {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  width: 1px;
+  height: 20px;
+  background: #91CCFB;
+}
+
+@-webkit-keyframes hovering {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, -5px, 0);
+            transform: translate3d(0, -5px, 0);
+  }
+}
+
+@keyframes hovering {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, -5px, 0);
+            transform: translate3d(0, -5px, 0);
+  }
+}
+@-webkit-keyframes shadowing {
+  from {
+    -webkit-transform: scale(1) translate3d(0, 0, 0);
+            transform: scale(1) translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: scale(1.25) translate3d(0, 0, 0);
+            transform: scale(1.25) translate3d(0, 0, 0);
+  }
+}
+@keyframes shadowing {
+  from {
+    -webkit-transform: scale(1) translate3d(0, 0, 0);
+            transform: scale(1) translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: scale(1.25) translate3d(0, 0, 0);
+            transform: scale(1.25) translate3d(0, 0, 0);
+  }
+}
