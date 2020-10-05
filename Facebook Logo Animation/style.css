@@ -1,0 +1,85 @@
+html,body {
+    background-color:#dddddd;
+  }
+  #dice_wrapper {
+    -webkit-perspective:0px;
+            perspective:0px;
+    width:200px;
+    height:200px;
+    position:absolute;
+    -webkit-transform:translate(-50%,-50%);
+        -ms-transform:translate(-50%,-50%);
+            transform:translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    cursor:pointer;
+    box-shadow:0 10px 30px 2px rgba(0,0,0,0.3);
+  }
+  #dice {
+    -webkit-transform-origin:50% 50%;
+        -ms-transform-origin:50% 50%;
+            transform-origin:50% 50%;
+  }
+  #dice,#dice div {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+            transition: transform .2s ease-in-out;
+  }
+  #dice div span{
+    -webkit-transform:translate(-50%,-50%);
+        -ms-transform:translate(-50%,-50%);
+            transform:translate(-50%,-50%);
+    position:absolute;
+    top:50%;
+    left:50%;
+    height:70%;
+    width:50%;
+    border: 0;
+    overflow: hidden;
+  }
+  #dice div span:before{
+    content: " ";
+    position: absolute;
+    margin-left: 2rem;
+    border: 2.2em solid #ffffff;
+    height: 100%;
+    width: 100%;
+    border-radius: 2.2rem;
+  }
+  #dice div span:after{
+    content: " ";
+    position: absolute;
+    height: 2.2em;
+    width: 100%;
+    top:43%;
+    background-color:#ffffff;
+  }
+  #front {
+    background-color:#3B5998;
+  }
+  #top {
+    background-color:#ffffff;
+    -webkit-transform:translate(0,-100%) rotateX(90deg);
+            transform:translate(0,-100%) rotateX(90deg);
+    -webkit-transform-origin:bottom center;
+        -ms-transform-origin:bottom center;
+            transform-origin:bottom center;
+  }
+  #dice #top span:before{
+    border: 2.2em solid #3B5998;
+  }
+  #dice #top span:after{
+    background-color:#3B5998;
+  }
+  #dice_wrapper:hover #dice {
+    -webkit-transform: translate(0,50%) rotateX(-90deg);
+            transform: translate(0,50%) rotateX(-90deg);
+  }
