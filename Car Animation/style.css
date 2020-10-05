@@ -1,0 +1,104 @@
+body{
+	margin:0;
+	color:#444;
+	font:300 18px/18px Roboto, sans-serif;
+}
+
+body{text-align:center;padding:80px;overflow:hidden}
+.car-cartoon-animation {
+    -webkit-perspective: 160px;
+    perspective: 160px;
+    width: 320px;
+    position: absolute;
+    z-index: 50;
+    left: 50%;
+    margin-left:-160px;
+    top: 50%;
+             
+}
+.car-cartoon-animation img {
+    width: 100%;
+    animation-name: animation;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+@keyframes animation {
+    0% {
+        transform:scale(.95,.95) translateY(0px);
+    }
+
+    100% {
+        transform: scale(.30,.30) translateY(-800px);
+    }
+}
+.road-wrap{
+    -webkit-perspective:160px;
+    perspective:160px;
+}
+.road-wrap .road{
+    margin-top:-360px;
+    -webkit-transform:rotateX(80deg);
+    transform:rotateX(80deg);
+}
+.road-wrap .lane-wrap{
+    -webkit-animation:steer 4s linear infinite;
+    animation:steer 4s linear infinite;
+}
+.road-wrap .lane{
+	width:25px;
+	margin:auto;
+}
+.road-wrap .lane>div{
+	width:100%;
+	margin:auto;
+	margin-top:30px;
+	margin-bottom:30px;
+	background-color:#444;
+	-webkit-animation:lane 10s linear reverse infinite;
+	animation:lane 10s linear reverse infinite;
+}
+.road-wrap .lane>div:nth-child(1){height:15px}
+.road-wrap .lane>div:nth-child(2){height:20px}
+.road-wrap .lane>div:nth-child(3){height:30px}
+.road-wrap .lane>div:nth-child(4){height:50px}
+.road-wrap .lane>div:nth-child(5){height:40px}
+.road-wrap .lane>div:nth-child(6){height:50px}
+.road-wrap .lane>div:nth-child(7){height:40px}
+.road-wrap .lane>div:nth-child(8){height:50px}
+.road-wrap .lane>div:nth-child(9){height:30px}
+.road-wrap .lane>div:nth-child(10){height:20px}
+.road-wrap .lane>div:nth-child(11){height:15px}
+@-webkit-keyframes lane{
+	0%{
+        -webkit-transform:translateY(320px);
+        transform:translateY(320px);
+	}
+	100%{
+        -webkit-transform:translateY(-160px);
+        transform:translateY(-160px);
+	}
+}
+@keyframes lane{
+	0%{
+        -webkit-transform:translateY(320px);
+        transform:translateY(320px) scale(.60,.60);
+	}
+	100%{
+        -webkit-transform:translateY(-160px) scale(.80,.80);
+        transform:translateY(-160px) scale(.80,.80);
+	}
+}
+@media(max-width:768px) {
+.car-cartoon-animation{
+    width:150px;
+    margin-left:-75px;
+}
+}
+@media (min-width: 768px){
+    .car-cartoon-animation{
+    width:250px;
+    margin-left:-125px;
+}
+}
