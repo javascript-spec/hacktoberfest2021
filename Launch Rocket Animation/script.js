@@ -1,0 +1,1 @@
+LabTemplate.loadComplete();

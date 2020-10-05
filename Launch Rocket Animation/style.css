@@ -1,0 +1,158 @@
+body {
+    overflow: hidden;
+  }
+  
+  #LaunchButton {
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+    opacity: 1;
+    animation: LaunchButton-animation 0.6s infinite 0.4s ease-in-out;
+  }
+  #LaunchButton:hover {
+    cursor: pointer;
+  }
+  
+  div.launch #LaunchButton {
+    transform: translateX(-50%) translateY(-50%) scale(1);
+    opacity: 0;
+  }
+  div.launch #LaunchButton:hover {
+    cursor: default;
+  }
+  
+  @keyframes LaunchButton-animation {
+    50% {
+      transform: translateX(-50%) translateY(-40%) scale(1);
+    }
+  }
+  #RocketShip {
+    visibility: hidden;
+  }
+  
+  #Entire {
+    visibility: hidden;
+  }
+  
+  div.launch #RocketShip {
+    visibility: visible;
+    animation: start .5s ease-in-out;
+  }
+  
+  .RocketShipClass {
+    animation: dance 0.05s infinite alternate;
+  }
+  
+  div.launch #Entire {
+    visibility: visible;
+    animation: start .5s ease-in-out;
+  }
+  
+  div.canvas {
+    background: #3c2831;
+  }
+  
+  @keyframes start {
+    0% {
+      transform: translateY(300px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  @keyframes dance {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(4px);
+    }
+  }
+  .rainbow {
+    animation: rocket-animation 1.3s infinite, opacity1 1.3s infinite;
+  }
+  
+  .rainbow1 {
+    animation: rocket-animation 1.8s infinite, opacity1 1.8s infinite;
+  }
+  
+  .rainbow2 {
+    animation: rocket-animation 2.4s infinite, opacity1 2.4s infinite;
+  }
+  
+  @keyframes rocket-animation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(600px);
+    }
+  }
+  .wifi1 {
+    animation: opacity 1.0s 1.4s infinite ease-in-out;
+  }
+  
+  .wifi2 {
+    animation: opacity 1.0s 1.5s infinite ease-in-out;
+  }
+  
+  .wifi3 {
+    animation: opacity 1.0s 1.6s infinite ease-in-out;
+  }
+  
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes opacity1 {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  #BgStar0 {
+    visibility: hidden;
+  }
+  
+  div.launch #BgStar0 {
+    visibility: visible;
+    animation: star-animation 0.6s infinite 0.2s ease-in-out;
+  }
+  
+  #BgStar1 {
+    visibility: hidden;
+  }
+  
+  div.launch #BgStar1 {
+    visibility: visible;
+    animation: star-animation 0.6s infinite ease-in-out;
+  }
+  
+  #BgStar2 {
+    visibility: hidden;
+  }
+  
+  div.launch #BgStar2 {
+    visibility: visible;
+    animation: star-animation 0.6s infinite 0.4s ease-in-out;
+  }
+  
+  @keyframes star-animation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(600px);
+    }
+  }
+  
