@@ -1,0 +1,68 @@
+.kz-photo {
+    width: 227px;
+    height: 227px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  
+  img {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff;
+    width: 211px;
+    height: 212px;
+    z-index: 3;
+    opacity: 1;
+    animation: photo-ani 4s forwards;
+  }
+  
+  .kz-photo-line {
+    z-index: 2;
+    position: relative;
+  }
+  
+  .line {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1px;
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: line-ani 5.5s forwards;
+  }
+  
+  .circle {
+    stroke-width: 3px;
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
+    animation: line-ani 3s forwards;
+  }
+  
+  /* Keyframes */
+  @keyframes line-ani {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes photo-ani {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /* Style Demo */
+  body {
+    background: #2c3e50;
+  }
+  
