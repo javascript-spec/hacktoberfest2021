@@ -1,0 +1,28 @@
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.spinner{
+    width: 80px;
+    height: 80px;
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #5670ff;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    animation: spin 0.8s infinite linear;
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
