@@ -3,8 +3,8 @@
 </h1>
 
 <br /> 
-
-<img src="https://hacktoberfestswaglist.com/img/Hacktoberfest_20.jpg" width="350px" height="350px"/>
+<img align="right" src="https://hacktoberfestswaglist.com/img/Hacktoberfest_20.jpg" width="200px" height="200px"/>
+<img align="right" src="https://hacktoberfestswaglist.com/img/Hacktoberfest_20.jpg" width="200px" height="200px"/>
 <hr />
 
 
@@ -34,4 +34,6 @@ npm install
 npm start
 ```
 
-<img align="right" src ="https://media0.giphy.com/media/ln7z2eWriiQAllfVcn/source.gif" width="500px" height="500px" />
+<img align="right" src ="https://media0.giphy.com/media/ln7z2eWriiQAllfVcn/source.gif" width="200px" height="200px" />
+
+<img src="https://camo.githubusercontent.com/e15e75521862be103c834df436a8f9e075c945e5/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6475334a336358797a686a3735494f6776412f67697068792e676966" width="200px" height="200px"/>
