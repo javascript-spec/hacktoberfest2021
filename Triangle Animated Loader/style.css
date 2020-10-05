@@ -1,0 +1,102 @@
+body {
+    min-height: 100vh;
+    background: #F5F9FF;
+    display: flex;
+    -webkit-box-pack: center;
+      justify-content: center;
+    -webkit-box-align: center;
+      align-items: center;
+      overflow: hidden;
+  }
+  .loader {
+      --path: #ec6834;
+      --dot: #28d7ee;
+      --duration: 3s;
+      position: relative;
+    }
+    .loader:before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      position: absolute;
+      background: var(--dot);
+      top: 37px;
+      
+    }
+    .loader svg polygon {
+      fill: none;
+      stroke: var(--path);
+      stroke-width: 10px;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
+    .loader svg polygon {
+      stroke-dasharray: 145 76 145 76;
+      stroke-dashoffset: 0;
+      -webkit-animation: pathTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+              animation: pathTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+    }
+  
+  
+    .loader.triangle {
+      width: 48px;
+    }
+    .loader.triangle:before {
+      left: 21px;
+              transform: translate(-10px, -18px);
+              animation: dotTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+    }
+    
+    @-webkit-keyframes pathTriangle {
+      33% {
+        stroke-dashoffset: 74;
+      }
+      66% {
+        stroke-dashoffset: 147;
+      }
+      100% {
+        stroke-dashoffset: 221;
+      }
+    }
+    
+    @keyframes pathTriangle {
+      33% {
+        stroke-dashoffset: 74;
+      }
+      66% {
+        stroke-dashoffset: 147;
+      }
+      100% {
+        stroke-dashoffset: 221;
+      }
+    }
+    @-webkit-keyframes dotTriangle {
+      33% {
+        -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+      }
+      66% {
+        -webkit-transform: translate(10px, -18px);
+                transform: translate(10px, -18px);
+      }
+      100% {
+        -webkit-transform: translate(-10px, -18px);
+                transform: translate(-10px, -18px);
+      }
+    }
+  
+  @keyframes dotTriangle {
+    33% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    66% {
+      -webkit-transform: translate(10px, -18px);
+              transform: translate(10px, -18px);
+    }
+    100% {
+      -webkit-transform: translate(-10px, -18px);
+              transform: translate(-10px, -18px);
+    }
+  }
