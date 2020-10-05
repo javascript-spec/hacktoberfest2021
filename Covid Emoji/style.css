@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #251801;
+  cursor: pointer;
+  cursor: url(virus.png);
+}
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.container .face {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #ffcd00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+.container .face:hover {
+  background: linear-gradient(180deg, #f44336, #f44336, #ffcd00);
+}
+.container .face:before {
+  content: "";
+  position: absolute;
+  top: 180px;
+  width: 150px;
+  height: 70px;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  background: #b57700;
+  transition: 0.5s;
+}
+.container .face:hover:before {
+  top: 210px;
+  width: 150px;
+  height: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background: #9d0b00;
+}
+.container .face .eyes {
+  position: relative;
+  top: -40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .face .eyes .eye {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 15px;
+  background: #fff;
+  border-radius: 50%;
+}
+.container .face .eyes .eye:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: #333;
+  border-radius: 50%;
+}
+.container h2 {
+  position: absolute;
+  top: 75px;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.container h2:last-child {
+  position: absolute;
+  top: initial;
+  bottom: 75px;
+  font-size: 3rem;
+  color: #fff;
+}
