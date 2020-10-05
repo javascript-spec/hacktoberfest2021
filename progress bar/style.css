@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.progress {
+    margin: auto;
+    width: 50%;
+    height: 5%;
+    background: transparent;
+    background-position: -10px 0;
+    border: 4px solid #c1c1c1;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.progress::before {
+    content: '';
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    animation: loader 6s ease-in-out infinite;
+    background: linear-gradient(to right, orange 0%, orange 50%, #d2d2d2 50%, #d2d2d2 100%);
+
+
+}
+
+
+
+
+
+/* keyframes */
+
+
+@-webkit-keyframes-loader {
+    0% {
+        left: -100%; 
+    }
+    75% {
+        left: -5%;
+    }
+    85% {
+        left: -5%;
+    }
+
+    95% {
+        left: 0;
+    }
+}
+
+
+
+@keyframes loader{
+    0% {
+        left: -100%; 
+    }
+    75% {
+        left: -5%;
+    }
+    85% {
+        left: -5%;
+    }
+
+    95% {
+        left: 0;
+    }
+}
