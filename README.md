@@ -1,9 +1,9 @@
 <h1 align="center">
-  HacktoberFest 2020
+  HacktoberFest 2021
 </h1>
 
 <br /> 
-<img align="right" src="https://hacktoberfestswaglist.com/img/Hacktoberfest_20.jpg" width="200px" height="200px"/>
+<img align="right" src="https://hacktoberfest.digitalocean.com/_nuxt/img/logo-hacktoberfest-full.f42e3b1.svg" width="300px" height="300px"/>
 <hr />
 
 
@@ -12,13 +12,13 @@
 1. Clone the repository
 
 ```bash
-git clone https://github.com/javascript-spec/hacktoberfest-2020.git
+git clone https://github.com/javascript-spec/hacktoberfest2021.git
 ```
 
 2. Change the working directory
 
 ```bash
-cd hacktoberfest-2020
+cd hacktoberfest2021
 ```
 
 3. Install dependencies
