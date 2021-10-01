@@ -21,17 +21,8 @@ git clone https://github.com/javascript-spec/hacktoberfest2021.git
 cd hacktoberfest2021
 ```
 
-3. Install dependencies
-
-```bash
-npm install
-```
-
-4. Run the app
-
-```bash
-npm start
-```
+3. Start Contributing
+🔥
 
 <img align="right" src ="https://media0.giphy.com/media/ln7z2eWriiQAllfVcn/source.gif" width="200px" height="200px" />
 
