@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Bookshelf Apps</title>
+    <meta name="title" content="Bookshelf Apps">
+
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/fbd4858647.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	
+    <header>
+        <div class="header-container">
+            <h1>Bookshelf Apps</h1>
+        </div>
+    </header>
+
+    <section id="input-buku" class="box-wrapper container">
+        <h2 class="font-gradient text-center">Enter New Book</h2>
+        <form id="form-input-buku" action="#" class="form">
+            <div class="form-group">
+                <label for="input-title" class="form-label">Title</label>
+                <input class="form-input" type="text" id="input-title" name="title"
+                    placeholder="enter book title">
+            </div>
+            <div class="form-group">
+                <label for="input-author" class="form-label">Author</label>
+                <input class="form-input" type="text" id="input-author" name="author"
+                    placeholder="enter book author">
+            </div>
+            <div class="form-group">
+                <label for="input-year" class="form-label">Year</label>
+                <input class="form-input" type="number" id="input-year" name="year"
+                    placeholder="enter the year of publication of the book">
+            </div>
+            <div class="form-group">
+                <input class="form-input" type="checkbox" id="input-checklist" name="checklist">
+                <label for="input-checklist" class="form-label">Finished reading</label>
+            </div>
+            <button type="submit" class="btn-submit">Add book</button>
+        </form>
+    </section>
+
+    <section id="rak-buku">
+        <section class="rak-section">
+            <h2 class="font-gradient text-center">Unfinished Book</h2>
+            <p class="counter">Jumlah: <span id="not-read-count">0</span></p>
+            <div class="list-item" id="not-read">
+
+            </div>
+        </section>
+
+        <section class="rak-section">
+            <h2 class="font-gradient text-center">Finished Book</h2>
+            <p class="counter">Jumlah: <span id="done-read-count">0</span></p>
+            <div class="list-item" id="done-read">
+
+            </div>
+        </section>
+    </section>
+
+	<div id="modal-edit" class="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3 class="font-gradient text-center">Edit</h3>
+                <form id="form-edit-buku" action="#" class="form">
+                    <div class="form-group field-edit-id">
+                        <label for="edit-id" class="form-label">id</label>
+                        <input class="form-input" type="text" id="edit-id" name="idbuku" placeholder="id buku">
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-title" class="form-label">Title</label>
+                        <input class="form-input" type="text" id="edit-title" name="title"
+                            placeholder="enter book title">
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-author" class="form-label">Author</label>
+                        <input class="form-input" type="text" id="edit-author" name="author"
+                            placeholder="enter book author">
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-year" class="form-label">Year</label>
+                        <input class="form-input" type="number" id="edit-year" name="year"
+                            placeholder="enter the year of publication of the book">
+                    </div>
+                    <div class="btn-edit-wrapper">
+                        <button type="submit" class="btn-submit"><i class="fas fa-save"></i> Save</button>
+                        <button class="btn-cancel">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="storage.js"></script>
+    <script src="addDeleteUpdate.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
