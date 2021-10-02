@@ -1,0 +1,30 @@
+*{
+    background-color: rgb(196, 196, 15);
+}
+
+.main{
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(121, 80, 5);
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+}
+
+.button-1{
+    display: flex;
+    padding: 10px;
+    background-color: #f44336;
+}
+
+.button-2 {
+    display: flex;
+    padding: 10px;
+    background-color: #4CAF50;
+}
