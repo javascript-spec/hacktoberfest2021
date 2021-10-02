@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hide & Show Navbar</title>
+  <meta name="description" content="template that hide navbar on scroll down and show on scroll up" />
+  <style>
+    * {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    body {
+      height: 1000px
+    }
+
+    #navbar {
+      top: 0;
+      position: fixed;
+      height: 64px;
+      width: 100%;
+      max-width: 100%;
+      background: #7FB1EE;
+      padding: 0 2rem !important;
+      display: flex;
+      align-items: center;
+      transition: all .3s ease;
+    }
+
+    #navbar.hide {
+      transition: all .3s ease;
+      top: -64px
+    }
+
+    #navbar span {
+      text-transform: uppercase;
+      font-family: arial;
+      color: white;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navbar">
+    <span>header</span>
+  </div>
+  <script>
+    let prevScroll = window.pageYOffset;
+    window.onscroll = () => {
+      let currentScrollPos = window.pageYOffset;
+      if (prevScroll > currentScrollPos) {
+        document.getElementById("navbar").classList.remove('hide')
+      } else {
+        document.getElementById("navbar").classList.add('hide')
+      }
+      prevScroll = currentScrollPos;
+    }
+  </script>
+</body>
+
+</html>
