@@ -1,0 +1,113 @@
+body {
+  background-image: url("background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #cccccc;
+  align-content: center;
+}
+
+input[type="text"] {
+  background-color: antiquewhite;
+  height: 50px;
+  width: 315px;
+  left: 15px;
+  top: 1px;
+  color: black;
+  position: relative;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 7px;
+}
+
+.box {
+  align-items: center;
+  background-image: url("background.jpg");
+  height: 480px;
+  width: 370px;
+  border-radius: 10px;
+  position: relative;
+  left: 38%;
+  opacity: 80%;
+}
+
+.display {
+  width: 220px;
+  position: relative;
+  left: 13px;
+  height: 50px;
+  top: px;
+}
+
+.button {
+  position: relative;
+  top: 15px;
+  margin: 2px;
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  margin-left: 30px;
+  cursor: pointer;
+  border-top: 2px solid transparent;
+  background-image: url("wood1.jpg");
+}
+
+.button.op2 {
+  color: rgb(255, 255, 255);
+  font-size: larger;
+  font-weight: 200;
+  background-color: rgb(2, 2, 2);
+  border-bottom: 2px black solid;
+  background-image: url("wood4.jpg");
+}
+
+.button.num {
+  color: white;
+  font-size: larger;
+  font-weight: 200;
+  border-bottom: 2px black solid;
+  border-top: 2px red solid;
+}
+
+.button:hover {
+  color: rgb(3, 3, 3);
+  background-color: rgb(182, 88, 0);
+  background-image: url("wood 3.jpg");
+}
+
+.keys {
+  position: relative;
+  top: 15px;
+}
+
+.op {
+  color: white;
+  font-size: larger;
+  font-weight: 200;
+  border-bottom: 2px black solid;
+  border-top: 2px red solid;
+  background-image: url("wood5.jpg");
+}
+
+.header {
+  text-align: center;
+  padding: 60px;
+  padding-bottom: 15px;
+  left: 45%;
+  color: rgb(92, 29, 29);
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.inheader {
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 1px;
+  left: 45%;
+  color: rgb(92, 29, 29);
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
