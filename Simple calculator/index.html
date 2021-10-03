@@ -1,0 +1,139 @@
+<! DOCTYPE html>
+  <head>
+    <title>Calculator project</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  </head>
+
+  <body style="background-color: aqua">
+    <div class="header">
+      <h1>
+        Simple Calculator
+      </h1>
+    </div>
+    <div class="box">
+      <!--to bear the cal-->
+      <div class="inheader">
+        <h1>
+          Calculator
+        </h1>
+      </div>
+      <div class="display">
+        <!--for dispaly-->
+        <input type="text" readonly size="18" id="textinscreen" value="0" />
+      </div>
+
+      <div class="keys">
+        <!--to hold the keyboard-->
+        <input
+          type="button"
+          value="+"
+          class="button op"
+          onclick="setOperator('+')"
+        />
+        <input
+          type="button"
+          value="-"
+          class="button op"
+          onclick="setOperator('-')"
+        />
+        <input
+          type="button"
+          value="*"
+          class="button op"
+          onclick="setOperator('*')"
+        />
+        <br />
+        <input
+          type="button"
+          value="^"
+          class="button op"
+          onclick="setOperator('**')"
+        />
+        <input
+          type="button"
+          value="MOD"
+          class="button op"
+          onclick="setOperator('%')"
+        />
+        <input
+          type="button"
+          value="/"
+          class="button op"
+          onclick="setOperator('/')"
+        />
+        <br />
+        <input
+          type="button"
+          value="7"
+          class="button num"
+          onclick="setscreen('7')"
+        />
+        <input
+          type="button"
+          value="8"
+          class="button num"
+          onclick="setscreen('8')"
+        />
+        <input
+          type="button"
+          value="9"
+          class="button num"
+          onclick="setscreen('9')"
+        />
+        <br />
+        <input
+          type="button"
+          value="4"
+          class="button num"
+          onclick="setscreen('4')"
+        />
+        <input
+          type="button"
+          value="5"
+          class="button num"
+          onclick="setscreen('5')"
+        />
+        <input
+          type="button"
+          value="6"
+          class="button num"
+          onclick="setscreen('6')"
+        />
+        <br />
+        <input
+          type="button"
+          value="1"
+          class="button num"
+          onclick="setscreen('1')"
+        />
+        <input
+          type="button"
+          value="2"
+          class="button num"
+          onclick="setscreen('2')"
+        />
+        <input
+          type="button"
+          value="3"
+          class="button num"
+          onclick="setscreen('3')"
+        />
+        <br />
+        <input type="button" value="C" class="button op2" onclick="reset('')" />
+        <input
+          type="button"
+          value="0"
+          class="button num"
+          onclick="setscreen('0')"
+        />
+        <input
+          type="button"
+          value="="
+          class="button op2"
+          onclick="getAnswer()"
+        />
+      </div>
+    </div>
+    <script src="calc.js"></script>
+  </body>
+</html>
