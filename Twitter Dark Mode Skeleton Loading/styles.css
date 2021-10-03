@@ -1,0 +1,114 @@
+.skeleton-img, .skeleton-avatar, .tweet-footer, .tweet-text, .tweet-header {
+  -webkit-animation: skeleton 1s ease-in-out forwards infinite;
+          animation: skeleton 1s ease-in-out forwards infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes skeleton {
+  0% {
+    opacity: 0.2;
+    transform: translateY(6px) scale(0.98);
+  }
+  85%, 100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes skeleton {
+  0% {
+    opacity: 0.2;
+    transform: translateY(6px) scale(0.98);
+  }
+  85%, 100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #10171E;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.tweet {
+  background-color: #15202B;
+  padding: 0.8rem 0.75rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #38444d;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.tweet-content {
+  margin-left: calc(48px + 10px);
+}
+.tweet-header {
+  transform-origin: bottom;
+}
+.tweet-text {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+.tweet-footer {
+  display: flex;
+  margin-top: 1rem;
+  transform-origin: bottom;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.skeleton {
+  background-color: #15202B;
+}
+.skeleton-avatar {
+  width: 48px;
+  height: 48px;
+  background-color: #213243;
+  border-radius: 100%;
+  float: left;
+}
+.skeleton-line {
+  height: 0.7rem;
+  background-color: #213243;
+  border-radius: 3px;
+  margin-bottom: 0.3rem;
+}
+.skeleton-line.heading {
+  height: 1rem;
+  margin-bottom: 0.5rem;
+}
+.skeleton-img {
+  height: 250px;
+  background-color: #213243;
+  border-radius: 0.75rem;
+  margin-top: 1.5rem;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+.skeleton-button {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-color: #213243;
+  flex-shrink: 0;
+}
+.skeleton-button:not(:last-child) {
+  margin-right: 2rem;
+}
+.skeleton-button.rounded {
+  border-radius: 100%;
+}
