@@ -1,0 +1,170 @@
+
+$premier-color: #202122;
+$secondary-color: #e8eaed;
+$tersier-color: #9aa0a6;
+$accent-blue-color: #4285f4;
+$accent-orange-color: #fabb2e;
+
+@import url("https://fonts.googleapis.com/css?family=Podkova:400,500,700");
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $premier-color;
+  font-family: Podkova, san-serif;
+  font-size: 1.2rem;
+  color: $secondary-color;
+  padding: 0;
+  margin: 0;
+}
+
+.icon {
+  color: inherit;
+  -webkit-text-stroke: 2px $accent-orange-color;
+  color: transparent;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 59px;
+  line-height: 65px;
+}
+
+.header-tag ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  padding-right: 1rem;
+
+  li a {
+    padding: 1rem;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+  }
+  a:hover {
+    color: $tersier-color;
+  }
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.container {
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 2em;
+}
+
+.main-right- {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  left: inherit;
+  max-width: 600px;
+  max-height: 75vh;
+
+  > .main-gimnas {
+    // border: solid 2px $accent-blue-color;
+    // border-radius: 25px;
+    // background-color: $accent-blue-color;
+
+    font: normal bold 6.5rem/0.5 Podkova;
+    left: -50px;
+    position: relative;
+    padding-left: 0;
+    padding: 3rem;
+    transform: translate(-50% -50%);
+  }
+  > .main-description {
+    padding: 1.2rem;
+    padding-left: 0;
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+  > .see-button {
+    margin: 0;
+    padding: 0.8rem;
+    padding-left: 0;
+    border-bottom: solid 1px $premier-color;
+    > a {
+      text-decoration: none;
+      font: normal normal 0.8rem/1.2 Podkova;
+      color: $secondary-color;
+      justify-content: flex-start;
+      border-bottom: solid 2px $secondary-color;
+    }
+  }
+}
+
+
+
+.square-shape {
+  position: fixed;
+  left: 75%;
+  //   top: 31%;
+  top: 150px;
+  width: 302px;
+  height: 302px;
+  background: $accent-blue-color;
+  border: 2px solid $premier-color;
+  box-sizing: border-box;
+  border-radius: 21px;
+  transform: rotate(-30deg);
+}
+
+.pic-shape {
+  position: fixed;
+  left: 75%;
+  top: 150px;
+  width: 302px;
+  height: 302px;
+  background: url("/src/gimnas-shape-.png");
+  box-sizing: border-box;
+  transform: rotate(-30deg);
+}
+
+.square-shape-left {
+  @extend .square-shape;
+  left: 50%;
+  //   top: 39%;
+  top: 231px;
+  background-color: transparent;
+  border: 2px solid $secondary-color;
+}
+
+.square-shape-left-bot {
+  @extend .square-shape;
+  left: 62%;
+  //   top: 49%;
+  top: 541px;
+  background: $accent-orange-color;
+}
+
+.square-shape-right-bot {
+  @extend .square-shape;
+  left: 87%;
+  //   top: 62%;
+  top: 469px;
+  background-color: transparent;
+  border: 2px solid $secondary-color;
+}
+
+
+

@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Podkova:400,500,700");
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #202122;
+  font-family: Podkova, san-serif;
+  font-size: 1.2rem;
+  color: #e8eaed;
+  padding: 0;
+  margin: 0;
+}
+
+.icon {
+  color: inherit;
+  -webkit-text-stroke: 2px #fabb2e;
+  color: transparent;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 59px;
+  line-height: 65px;
+}
+
+.header-tag ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  padding-right: 1rem;
+}
+.header-tag ul li a {
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+}
+.header-tag ul a:hover {
+  color: #9aa0a6;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.container {
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 2em;
+}
+
+.main-right- {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  left: inherit;
+  max-width: 600px;
+  max-height: 75vh;
+}
+.main-right- > .main-gimnas {
+  font: normal bold 6.5rem/0.5 Podkova;
+  left: -50px;
+  position: relative;
+  padding-left: 0;
+  padding: 3rem;
+  transform: translate(-50% -50%);
+}
+.main-right- > .main-description {
+  padding: 1.2rem;
+  padding-left: 0;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+.main-right- > .see-button {
+  margin: 0;
+  padding: 0.8rem;
+  padding-left: 0;
+  border-bottom: solid 1px #202122;
+}
+.main-right- > .see-button > a {
+  text-decoration: none;
+  font: normal normal 0.8rem/1.2 Podkova;
+  color: #e8eaed;
+  justify-content: flex-start;
+  border-bottom: solid 2px #e8eaed;
+}
+
+.square-shape, .square-shape-right-bot, .square-shape-left-bot, .square-shape-left {
+  position: fixed;
+  left: 75%;
+  top: 150px;
+  width: 302px;
+  height: 302px;
+  background: #4285f4;
+  border: 2px solid #202122;
+  box-sizing: border-box;
+  border-radius: 21px;
+  transform: rotate(-30deg);
+}
+
+.pic-shape {
+  position: fixed;
+  left: 75%;
+  top: 150px;
+  width: 302px;
+  height: 302px;
+  background: url("/src/gimnas-shape-.png");
+  box-sizing: border-box;
+  transform: rotate(-30deg);
+}
+
+.square-shape-left {
+  left: 50%;
+  top: 231px;
+  background-color: transparent;
+  border: 2px solid #e8eaed;
+}
+
+.square-shape-left-bot {
+  left: 62%;
+  top: 541px;
+  background: #fabb2e;
+}
+
+.square-shape-right-bot {
+  left: 87%;
+  top: 469px;
+  background-color: transparent;
+  border: 2px solid #e8eaed;
+}/*# sourceMappingURL=style.css.map */
