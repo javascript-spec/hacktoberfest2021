@@ -1,0 +1,117 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.bg{
+   height: 100vh;
+   width: 100%;
+   position: relative;
+}
+.bg img{
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease-in;
+}
+.bg .content{
+   position: absolute;
+   top: 25%;
+   left: 23%;
+   min-height: 35%;
+   min-width: 50%;
+   background: #000;
+   opacity: 0.9;
+   border-radius: 10px;
+}
+.content h2 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 80%;
+	color: #fff;
+	transform: translate(0%, 10%);
+	font-size: 9rem;
+}
+.content h2:nth-child(1) {
+	color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
+.content h2:nth-child(2) {
+	color: #fff;
+	animation: animate 3s ease-in-out infinite;
+}
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			15% 44%,
+			32% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+	50% {
+		clip-path: polygon(
+			0 60%,
+			16% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
+
+.right{
+	position: absolute;
+	top: 30%;
+	right: 1%;
+	color: #fff;
+	padding: 2% 3%;
+	border-radius: 50%;
+	transition: all 0.3s ease-in-out;
+	clip-path: circle(75%);
+    transition: clip-path .5s;
+}
+.right i{
+	 font-size: 6rem;
+}
+.right:hover{
+	 cursor: pointer;
+	 clip-path: circle(33%);
+	 background: #fff;
+	 color: #111;
+}
+
+.left{
+	position: absolute;
+	top: 30%;
+	left: 1%;
+	color: #fff;
+	padding: 2% 3%;
+	border-radius: 50%;
+	transition: all 0.3s ease-in-out;
+	clip-path: circle(75%);
+    transition: clip-path .5s;
+}
+.left i{
+	 font-size: 6rem;
+}
+.left:hover{
+	 cursor: pointer;
+	 clip-path: circle(33%);
+	 background: #fff;
+	 color: #111;
+}
