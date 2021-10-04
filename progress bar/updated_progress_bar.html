@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <style>
+        .progress {
+            background-color: #ddd;
+            width: 100%;
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            background-color: blue;
+            width: 0px;
+            height: 100%;
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            margin: 0;
+            text-decoration: bolder;
+        }
+
+        .btn {
+            margin: 10px;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .success {
+            background-color: green;
+        }
+
+        .danger {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress">
+        <div class="progress-bar" id="progress-bar">
+            <p class="content"></p>
+        </div>
+    </div>
+    <button onclick="start()" class="btn success">Start</button>
+    <button onclick="stop()" class="btn danger">Stop</button>
+    <script>
+        var y;
+        var x = 0;
+        function start() {
+            clearInterval(y);
+            y = setInterval(function () {
+                document.getElementById("progress-bar").style.width = x + "%";
+                document.getElementsByClassName("content")[0].innerHTML = x + "%";
+                x += 1;
+                if (x > 100) {
+                    x = 0;
+                }
+            }, 100);
+        }
+
+        function stop() {
+            clearInterval(y);
+        }
+
+    </script>
+</body>
+
+</html>
