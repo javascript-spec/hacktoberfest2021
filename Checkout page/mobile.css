@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Red Hat Display", sans-serif;
+  }
+  
+  .back {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    /* background-size: 100%; */
+    background-color: hsl(225, 100%, 94%);
+    /* height: 100%; */
+    /* width: 100%; */
+    border: 2px solid hsl(225, 100%, 94%);
+  }
+  
+  .container {
+    height: 570px;
+    width: 330px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px 10px 25px hsl(226.4, 25.6%, 83.1%);
+  }
+  
+  .box {
+    width: 100%;
+  }
+  
+  .box img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+  }
+  
+  .box h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 900;
+  }
+  
+  #para {
+    text-align: center;
+    margin: 14px 25px 14px 25px;
+    font-size: 16px;
+    font-weight: lighter;
+    color: hsl(224, 23%, 55%);
+  }
+  
+  /* ********************  PLAN  ************************* */
+  #plan {
+    display: flex;
+    width: 280px;
+    height: 77px;
+    align-items: center;
+    margin: auto;
+    /* border: 2px solid red; */
+    border-radius: 15px;
+    background-color: hsl(225, 100%, 98%);
+  }
+  
+  #plan img {
+    margin: 15px;
+    width: 50px;
+  }
+  
+  #price {
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  
+  #price h4 {
+    font-weight: 700;
+  }
+  
+  #price p {
+    font-size: 16px;
+    font-weight: lighter;
+    color: hsl(224, 23%, 55%);
+  }
+  
+  #plan a {
+    margin: 10px;
+    font-size: 14px;
+    color: hsl(245, 75%, 52%);
+  }
+  
+  /* --------------Button------------------ */
+  .btn {
+    width: 284px;
+    height: 55px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    margin: auto;
+    /* padding: 18px; */
+    display: block;
+    margin-top: 30px;
+    border-radius: 12px;
+    border: 1px solid rgb(46, 69, 131);
+    box-shadow: 2px 10px 25px hsl(232.9, 9.5%, 64.9%);
+    cursor: pointer;
+  }
+  
+  .cancel {
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 18px;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+  }
+  
