@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+* {
+  box-sizing: border-box;
+  
+}
+:root {
+  --primary-color: #008f11;
+  --secondary-color: #22b445;
+  --dark-color: #020204;
+  
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+
+  background-color: var(--dark-color);
+
+  color: var(--secondary-color);
+  
+}
+
+header {
+
+  background-color: var(--primary-color);
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+ 
+}
+h1{
+  display: block;
+  text-align: center;
+  background-color: var(--primary-color);
+ margin: 0;
+}
+.search-bar {
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+  padding: 10px;
+  border-radius: 1rem;
+  color: var(--secondary-color);
+  font-family: inherit;
+  font-size: 1rem;
+}
+.search-bar::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.search-bar:focus {
+  outline: 0; /*shorthand for style width color*/
+
+  background-color: var(--dark-color);
+}
+
+main {
+ 
+   /*not working*/
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+.movie {
+  margin: 0;
+max-width: 350px;
+margin: 1px;
+box-shadow: 0.2px 4px 5px rgba(123, 177, 144, 0);
+align-items: center;
+
+}
+.movie-img {
+
+  
+  margin: 2rem;
+  border-radius: 30%/10%;
+  box-shadow: 2px 6px 20px rgb(11 156 49);
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  max-height:600px ;
+}
+
+.movie-info{
+  margin: 1rem;
+  color: white;
+padding: 3px;
+
+letter-spacing: 0.5px;
+text-align: center;
+
+}
+.overview{
+  margin: 20px;
+  text-align:center;
+
+  cursor: pointer;
+}
+
+.movie-info h3{
+  margin-top: 0;
+}
+
+.movie-info span{
+  background-color:#6B7280;
+  
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+}
+
+.movie-info span.cyan{
+  font-weight: bolder;
+  color: cyan;
+}
+.movie-info span.orange{
+  font-weight: bolder;
+  color: orange
+}
+.movie-info span.red{
+  font-weight: bolder;
+  color:red;
+}
+
+.overview:hover{
+  
+ 
+  border: 2px solid white;
+  border-radius: 6px;
+  background-color: var(--primary-color);
+  color: whitesmoke;
+   box-shadow: 2px , 3px , 7px green ;
+
+  
+}
+/* 
+OVERVIEW STYLING */
