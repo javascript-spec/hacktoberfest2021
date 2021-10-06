@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: crimson;
+            padding: 100px;
+        }
+        .div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .innerdiv{
+            width: 250px;
+            height: 250px;
+            background-color: white;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator</title>
+</head>
+<body>
+    <div class="div">
+        <input type="text" name="text" id="text"> <br>
+        <button type="submit" id="btn">Enter</button> <br> <br>
+        <div class="innerdiv">
+            <canvas id="qr"></canvas>
+        </div>
+    </div>
+    <script src="JS/jQuery.js"></script>
+    <script src="JS/qrious.js"></script>
+    <script>
+        var text = $('#text');
+        $('#btn').click(function(){
+            var qr =new QRious({
+                element: document.getElementById('qr') ,
+                value: text.val() ,
+                size: '250' ,
+                background: 'white' ,
+                foreground: 'black' ,
+                padding: '20'
+            });
+        });
+    </script>
+</body>
+</html>
