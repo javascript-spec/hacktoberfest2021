@@ -20,9 +20,26 @@ git clone https://github.com/javascript-spec/hacktoberfest2021.git
 ```bash
 cd hacktoberfest2021
 ```
-
-3. Start Contributing
+3. Create a branch 
+```bash
+git branch  <branch-name>
+git checkout <branch-name>
+```
+4. Start Contributing
 🔥
+5. Stage all your changes 
+```bash
+git add .
+```
+6. Commit your changes with a commit message 
+```bash
+git commit -m "commit message"
+```
+7. Push your changes to Github
+```bash
+git push origin <branch-name>
+```
+8. Create a pull request from Github
 
 <img align="right" src ="https://media0.giphy.com/media/ln7z2eWriiQAllfVcn/source.gif" width="200px" height="200px" />
 
