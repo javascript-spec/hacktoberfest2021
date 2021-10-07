@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etch A Sketch</title>
+</head>
+
+<body>
+  <div class="canvasWrap">
+    <div class="title">Etch-a-Sketch</div>  
+    <div class="instructions">
+        To move the cursor, use the directional arrows on your keyboard.
+        <br>
+        To reset the drawing, click the "Shake" button.
+    </div>
+    <canvas width="1600" height="1000" id="etch-a-sketch"></canvas>
+    <div class="buttons">
+      <button class="shake">Shake!</button>
+    </div>
+
+  <style>
+
+    body {
+      min-height: 100vh;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      background-color: #000000;
+      background-size: cover;
+      font-size: 16px;
+    }
+
+    .title {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    
+    .instructions {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    canvas {
+      border: 30px solid #e80000;
+      border-radius: 10px;
+      /* Set the width and height to half the actual size so it doesn't look pixelated */
+      width: 800px;
+      height: 500px;
+      background: #FFFFFF;
+    }
+
+    canvas.shake {
+      animation: shake 0.5s linear 1;
+    }
+
+    @keyframes shake {
+
+      10%,
+      90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+
+      20%,
+      80% {
+        transform: translate3d(2px, 0, 0);
+      }
+
+      30%,
+      50%,
+      70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+
+      40%,
+      60% {
+        transform: translate3d(4px, 0, 0);
+      }
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a.button, button, input[type="button"] {
+        color: white;
+        background: #D60087;
+        padding: 1rem;
+        border: 0;
+        border: 2px solid transparent;
+        text-decoration: none;
+        font-weight: 600;
+        font-size:2rem;
+        width: 100%;
+        max-width: 350px;
+    }
+  </style>
+</body>
+
+<script type="text/javascript">
+    const canvas = document.querySelector('#etch-a-sketch');
+    const ctx = canvas.getContext('2d');
+    const shakebutton = document.querySelector('.shake');
+    const MOVE_AMOUNT = 10;
+    const { width, height } = canvas;
+
+    let x = Math.floor(Math.random() * width);
+    let y = Math.floor(Math.random() * height);
+
+    ctx.lineJoin = 'round';
+    ctx.lineCap = 'round';
+    ctx.lineWidth = MOVE_AMOUNT;
+
+    let hue = 0;
+    ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+    ctx.lineTo(x, y);
+    ctx.stroke();
+
+    function draw({key}) {
+        hue += 5;
+        ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+        switch (key) {
+            case 'ArrowUp':
+                y -= MOVE_AMOUNT;
+                break;
+            case 'ArrowRight':
+                x += MOVE_AMOUNT;
+                break;
+            case 'ArrowDown':
+                y += MOVE_AMOUNT;
+                break;
+            case 'ArrowLeft':
+                x -= MOVE_AMOUNT;
+                break;
+            default:
+                break;
+        }
+        ctx.lineTo(x, y);
+        ctx.stroke();
+    }
+
+    function handleKey(e) {
+        if(e.key.includes('Arrow')) {
+            e.preventDefault();
+            draw({key: e.key});
+        }
+    }
+
+    window.addEventListener('keydown', handleKey);
+
+    function clearCanvas() {
+        canvas.classList.add('shake');
+        ctx.clearRect(0, 0, width, height);
+        canvas.addEventListener('animationend', function() {
+            canvas.classList.remove('shake');
+        }, { once: true });
+    }
+
+    shakebutton.addEventListener('click', clearCanvas);
+</script>
+
+</html>
