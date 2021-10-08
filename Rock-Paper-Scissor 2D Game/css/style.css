@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0074d9;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/* -------------------------------- Game Logo ------------------------------- */
+.game__logo {
+  position: fixed;
+  top: 20px;
+  left: 100px;
+  width: 150px;
+}
+
+/* ---------------------------------- Game ---------------------------------- */
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px 0;
+  width: 65%;
+  height: 100%;
+  margin: auto;
+}
+
+.game__round,
+.game__heading {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-weight: 400;
+  color: var(--primary-color);
+  font-size: 22px;
+  text-align: center;
+}
+
+.game__score-board {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.game__score {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.game__score h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #a8a8a8;
+  margin-bottom: 20px;
+}
+
+.game__score p {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.game__arena {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+  flex-grow: 1;
+}
+
+.game__side {
+  flex-grow: 1;
+  height: 100%;
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.game__side:not(:nth-of-type(2)) {
+  border: 1px solid #e9e9e9;
+}
+
+.game__side img {
+  width: 90%;
+}
+
+/* ---------------------------------- Hands --------------------------------- */
+
+.hand-img {
+  height: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  animation: none;
+}
+
+.game__side:nth-of-type(1) .hand-img {
+  transform-origin: left;
+  transform: translateX(-15px);
+}
+
+.game__side:nth-of-type(3) .hand-img {
+  transform-origin: right;
+  transform: translateX(15px);
+}
+
+.game__side:nth-of-type(1) .hand-img.animation {
+  animation: shake-left 0.8s linear;
+}
+
+.game__side:nth-of-type(3) .hand-img.animation {
+  animation: shake-right 0.8s linear;
+}
+
+/* ----------------------------- Hand Animation ----------------------------- */
+
+@keyframes shake-right {
+  0% {
+    transform: translateX(15px) rotate(0deg);
+  }
+
+  25% {
+    transform: translateX(15px) rotate(15deg);
+  }
+
+  50% {
+    transform: translateX(15px) rotate(0deg);
+  }
+
+  75% {
+    transform: translateX(15px) rotate(15deg);
+  }
+
+  100% {
+    transform: translateX(15px) rotate(0deg);
+  }
+}
+
+@keyframes shake-left {
+  0% {
+    transform: translateX(-15px) rotate(0deg);
+  }
+
+  25% {
+    transform: translateX(-15px) rotate(-15deg);
+  }
+
+  50% {
+    transform: translateX(-15px) rotate(0deg);
+  }
+
+  75% {
+    transform: translateX(-15px) rotate(-15deg);
+  }
+
+  100% {
+    transform: translateX(-15px) rotate(0deg);
+  }
+}
+
+/* ------------------------------- Player Side ------------------------------ */
+.player-btns,
+.computer-statement {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.player-btn svg {
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+  background: var(--primary-color);
+  border-radius: 50%;
+}
+
+/* ------------------------------ Computer Side ----------------------------- */
+.computer-side .hand-img {
+  justify-content: flex-end;
+}
+
+.computer-side .hand-img img {
+  transform: rotateY(180deg);
+}
+
+.computer-side p {
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.computer-side .wink {
+  width: 40px;
+  margin-left: 10px;
+}
+
+/* ----------------------------- Score Log Side ----------------------------- */
+.scoreLog-side {
+  justify-content: flex-start;
+  padding: 30px 50px;
+}
+
+.scoreLog-side .game__heading {
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.scoreLogs {
+  width: 100%;
+}
+
+.scoreLog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  border-top: 2px solid #e2e2e2;
+  display: none;
+}
+
+.scoreLogs .scoreLog:nth-of-type(2) {
+  border-top-width: 1px;
+}
+
+.scoreLog p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: rgb(37, 37, 37);
+  margin: 0 30px;
+}
+
+/* ------------------------------- Game Icons ------------------------------- */
+.icon svg,
+.icon-flipped svg {
+  fill: #bebebe;
+}
+
+.icon-flipped {
+  transform: rotateY(180deg);
+}
+
+.icon.winner svg,
+.icon-flipped.winner svg {
+  fill: var(--primary-color);
+}
