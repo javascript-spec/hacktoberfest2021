@@ -1,0 +1,41 @@
+<?php
+session_start();
+$user='';
+if(isset($_REQUEST['email']))
+{
+	$user=$_REQUEST['email'];
+}
+?>
+<!doctype html>
+<html>
+<head>
+<style>
+ul
+{
+	list-style-type:none;
+}
+ul li{
+	display:inline;
+	margin-left:30px;
+}
+ul li a
+{
+	padding-top:10px;
+	text-decorration:none;
+}
+</style>
+</head>
+<body>
+<ul>
+<li><a href="viewdetail.php">View detail</a></li>
+<li><a href="checkcamps.php">check for camps</a></li>
+<li><a href="uploadimage.php">upload his image</a></li>
+<li><a href="request.php">check for request</a></li>
+
+</ul>
+<p style="float:right;margin-top:-30px">Hi, <?php echo $user; ?></p>
+<br/>
+<br/>
+
+</body>
+</html>
