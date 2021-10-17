@@ -1,0 +1,26 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background: linear-gradient(to right, #E4EfE9 , #93A5CF);
+}
+#weather-data {
+    width: 300px;
+    margin: auto;
+    border: 1px solid black;
+    padding: 10px;
+}
+#title {
+    width: 100%;
+    text-align: center;
+}
+#city-name{
+    padding: 10px;
+}
+#button {
+    padding: 10px;
+    border: 1px solid black;
+}
+#weather-icon {
+    display: none;
+}
