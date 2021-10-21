@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoVaccinator-19</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" type="image/png" href="./assets/vaccine.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="48x48"
+      type="image/png"
+      href="./assets/vaccine.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      type="image/png"
+      href="./assets/vaccine.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="96x96"
+      type="image/png"
+      href="./assets/vaccine.png"
+    />
+  </head>
+  <body>
+    <input type="checkbox" class="side_menu_check" />
+
+    <div class="side_menu_control">
+      <label class="stack_menu">
+        <span>
+          <div class="stack_menu_icon">
+            <p class="top_line"></p>
+            <p class="mid_line"></p>
+            <p class="bot_line"></p>
+          </div>
+        </span>
+      </label>
+    </div>
+
+    <section id="side_menu">
+      <div class="break">
+        <p></p>
+      </div>
+      <form class="side_menu_buttons" name="side_menu_buttons">
+        <label>
+          <input
+            type="radio"
+            checked="checked"
+            name="side_menu"
+            value="Dashboard"
+          />
+          <span>
+            <svg
+              class="dashboard_icon"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.3725 9.26921C11.3516 11.6836 8.84558 13.1204 6.24621 12.7818C3.64685 12.4431 1.5926 10.4122 1.22431 7.81689C0.856015 5.22156 2.26415 2.6993 4.66668 1.65088"
+                stroke="#D0D1D2"
+                stroke-width="1.16667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.8333 7C12.8333 5.4529 12.2188 3.96917 11.1248 2.87521C10.0308 1.78125 8.5471 1.16666 7 1.16666V7H12.8333Z"
+                stroke="#D0D1D2"
+                stroke-width="1.16667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p class="side_menu_icon_text">Dashboard</p>
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="side_menu" value="Account" />
+          <span>
+            <svg
+              class="account_icon"
+              width="18"
+              height="20"
+              viewBox="0 0 18 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17 19V17C17 15.9391 16.5786 14.9217 15.8284 14.1716C15.0783 13.4214 14.0609 13 13 13H5C3.93913 13 2.92172 13.4214 2.17157 14.1716C1.42143 14.9217 1 15.9391 1 17V19"
+                stroke="#D0D1D2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M9 9C11.2091 9 13 7.20914 13 5C13 2.79086 11.2091 1 9 1C6.79086 1 5 2.79086 5 5C5 7.20914 6.79086 9 9 9Z"
+                stroke="#D0D1D2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p class="side_menu_icon_text">Account</p>
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="side_menu" value="Downloads" />
+          <span>
+            <svg
+              class="download_icon"
+              width="24"
+              height="21"
+              viewBox="0 0 24 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 16L12 20L16 16"
+                stroke="#D0D1D2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 11V20"
+                stroke="#D0D1D2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M20.8801 17.09C21.7494 16.4786 22.4014 15.6062 22.7413 14.5991C23.0813 13.5921 23.0915 12.503 22.7705 11.4898C22.4494 10.4766 21.8139 9.59209 20.9561 8.96456C20.0983 8.33703 19.0629 7.99917 18.0001 8H16.7401C16.4393 6.82787 15.8765 5.73925 15.0942 4.81608C14.3118 3.89291 13.3302 3.15926 12.2233 2.67036C11.1163 2.18145 9.9129 1.95003 8.70358 1.99352C7.49426 2.03701 6.31057 2.35427 5.24161 2.92143C4.17265 3.48858 3.24628 4.29085 2.53224 5.26783C1.81821 6.24481 1.33511 7.37105 1.11932 8.56175C0.903525 9.75245 0.960665 10.9766 1.28643 12.142C1.6122 13.3074 2.19811 14.3838 3.00005 15.29"
+                stroke="#D0D1D2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p class="side_menu_icon_text">Download</p>
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="side_menu" value="Alerts" />
+          <span>
+            <svg
+              class="notif_icon"
+              width="20"
+              height="22"
+              viewBox="0 0 20 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 7C16 5.4087 15.3679 3.88258 14.2426 2.75736C13.1174 1.63214 11.5913 1 10 1C8.4087 1 6.88258 1.63214 5.75736 2.75736C4.63214 3.88258 4 5.4087 4 7C4 14 1 16 1 16H19C19 16 16 14 16 7Z"
+                stroke="#D0D1D2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M11.73 20C11.5542 20.3031 11.3019 20.5547 10.9982 20.7295C10.6946 20.9044 10.3504 20.9965 10 20.9965C9.64964 20.9965 9.30541 20.9044 9.00179 20.7295C8.69818 20.5547 8.44583 20.3031 8.27002 20"
+                stroke="#D0D1D2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p class="side_menu_icon_text">Alerts</p>
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="side_menu" value="About" />
+          <span>
+            <svg
+              class="about_icon"
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z"
+                stroke="#D0D1D2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M11 15V11"
+                stroke="#D0D1D2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M11 7H11.01"
+                stroke="#D0D1D2"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <p class="side_menu_icon_text">About</p>
+          </span>
+        </label>
+      </form>
+      <div class="break br_bot">
+        <p></p>
+      </div>
+      <div class="logo">
+        <img src="./assets/vaccine.png" class="logo_icon" />
+        <p>CoVaccinator-19</p>
+      </div>
+    </section>
+
+    <section id="nav_menu">
+      <span class="selected_menu_cont">
+        <p id="selected_menu">Dashboard</p>
+      </span>
+      <div class="log">
+        <button class="login-reg" onclick="login_pageAppear()">
+          <p>Register / Login</p>
+        </button>
+      </div>
+      <div class="theme_cont">
+        <div class="theme">
+          <input
+            type="checkbox"
+            name="theme-select"
+            class="theme-toggle"
+            checked
+          />
+          <span class="to_dark">
+            <svg
+              class="moon"
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M11.2501 6.46083C10.9948 9.22339 8.63416 11.3105 5.86114 11.2252C3.08812 11.14 0.860062 8.91198 0.774857 6.13896C0.689651 3.36595 2.77672 1.0053 5.53927 0.75C4.33782 2.37543 4.50634 4.63526 5.93559 6.06452C7.36484 7.49377 9.62467 7.66229 11.2501 6.46083V6.46083Z"
+                stroke="#11263C"
+                stroke-width="1.16667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span class="to_light">
+            <svg
+              class="sun"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.00004 9.91668C8.61087 9.91668 9.91671 8.61084 9.91671 7.00001C9.91671 5.38918 8.61087 4.08334 7.00004 4.08334C5.38921 4.08334 4.08337 5.38918 4.08337 7.00001C4.08337 8.61084 5.38921 9.91668 7.00004 9.91668Z"
+                stroke="white"
+                stroke-width="1.1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M7 0.583344V1.75001"
+                stroke="white"
+                stroke-width="1.1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M7 12.25V13.4167"
+                stroke="white"
+                stroke-width="1.1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2.46179 2.46164L3.29013 3.28997"
+                stroke="white"
+                stroke-width="1.1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10.71 10.7101L11.5383 11.5384"
+                stroke="white"
+                stroke-width="1.1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M0.583374 7H1.75004"
+                stroke="white"
+                stroke-width="1.1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12.25 7H13.4167"
+                stroke="white"
+                stroke-width="1.1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M2.46179 11.5384L3.29013 10.7101"
+                stroke="white"
+                stroke-width="1.1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10.71 3.28997L11.5383 2.46164"
+                stroke="white"
+                stroke-width="1.1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section id="dashboard" class="menu_sec">
+      <div class="tot_doses dash_card">
+        <img src="./assets/doses-light.png" class="lig-img" />
+        <img src="./assets/doses-dark.png" class="dark-img" />
+        <div class="dash_card_text">
+          <p class="today_count">Today: 36,60,380</p>
+          <div class="heading">
+            <p class="title">Total Vaccinations</p>
+            <p class="value">37,08,07,177</p>
+          </div>
+          <div class="subheading-1 subheading">
+            <p class="sub_title">Dose 1</p>
+            <p class="Sub_value">29,95,32,439</p>
+          </div>
+          <div class="subheading-2 subheading">
+            <p class="sub_title">Dose 2</p>
+            <p class="Sub_value">7,12,74,738</p>
+          </div>
+        </div>
+      </div>
+      <div class="tot_sites dash_card">
+        <img src="./assets/dc-light.png" class="lig-img" />
+        <img src="./assets/dc-dark.png" class="dark-img" />
+        <div class="dash_card_text">
+          <div class="heading">
+            <p class="title">Total Sites</p>
+            <p class="value">32,091</p>
+          </div>
+          <div class="subheading-1 subheading">
+            <p class="sub_title">Government</p>
+            <p class="Sub_value">29,816</p>
+          </div>
+          <div class="subheading-2 subheading">
+            <p class="sub_title">Private</p>
+            <p class="Sub_value">2,275</p>
+          </div>
+        </div>
+      </div>
+      <div class="tot_regis dash_card">
+        <img src="./assets/reg-light.png" class="lig-img" />
+        <img src="./assets/reg-dark.png" class="dark-img" />
+        <div class="dash_card_text">
+          <p class="today_count">Today: 24,83,152</p>
+          <div class="heading">
+            <p class="title">Total Registerations</p>
+            <p class="value">37,90,52,378</p>
+          </div>
+          <div class="subheading-1 subheading">
+            <p class="sub_title">Age 18-44</p>
+            <p class="Sub_value">18,72,51,408</p>
+          </div>
+          <div class="subheading-2 subheading">
+            <p class="sub_title">Age 45+</p>
+            <p class="Sub_value">19,18,00,970</p>
+          </div>
+        </div>
+      </div>
+      <div class="dash_chart">
+        <div class="dash_cont">
+          <p class="chart_title">Vaccination Trends</p>
+          <div class="graph-legends">
+            <div class="legends">
+              <p class="d-1-leg">Dose 1</p>
+              <p class="d-2-leg">Dose 2</p>
+              <p class="tot-leg">Total Doses</p>
+            </div>
+            <p class="y-ax y-ax-1">1,00,00k</p>
+            <p class="y-ax y-ax-2">90,00k</p>
+            <p class="y-ax y-ax-3">80,00k</p>
+            <p class="y-ax y-ax-4">70,00k</p>
+            <p class="y-ax y-ax-5">60,00k</p>
+            <p class="y-ax y-ax-6">50,00k</p>
+            <p class="y-ax y-ax-7">40,00k</p>
+            <p class="y-ax y-ax-8">30,00k</p>
+            <p class="y-ax y-ax-9">20,00k</p>
+            <p class="y-ax y-ax-10">10,00k</p>
+            <p class="y-ax y-ax-11">0</p>
+            <p class="x-ax x-ax-1">10 Jun</p>
+            <p class="x-ax x-ax-2">11 Jun</p>
+            <p class="x-ax x-ax-3">12 Jun</p>
+            <p class="x-ax x-ax-4">13 Jun</p>
+            <p class="x-ax x-ax-5">14 Jun</p>
+            <p class="x-ax x-ax-6">15 Jun</p>
+            <p class="x-ax x-ax-7">16 Jun</p>
+            <p class="x-ax x-ax-8">17 Jun</p>
+            <p class="x-ax x-ax-9">18 Jun</p>
+            <p class="x-ax x-ax-10">19 Jun</p>
+            <p class="x-ax x-ax-11">20 Jun</p>
+            <p class="x-ax x-ax-12">21 Jun</p>
+            <p class="x-ax x-ax-13">22 Jun</p>
+            <p class="x-ax x-ax-14">23 Jun</p>
+            <p class="x-ax x-ax-15">24 Jun</p>
+            <p class="x-ax x-ax-16">25 Jun</p>
+            <p class="x-ax x-ax-17">26 Jun</p>
+            <p class="x-ax x-ax-18">27 Jun</p>
+            <p class="x-ax x-ax-19">28 Jun</p>
+            <p class="x-ax x-ax-20">29 Jun</p>
+            <p class="x-ax x-ax-21">30 Jun</p>
+            <p class="x-ax x-ax-22">1 Jul</p>
+            <p class="x-ax x-ax-23">2 Jul</p>
+            <p class="x-ax x-ax-24">3 Jul</p>
+            <p class="x-ax x-ax-25">4 Jul</p>
+            <p class="x-ax x-ax-26">5 Jul</p>
+            <p class="x-ax x-ax-27">6 Jul</p>
+            <p class="x-ax x-ax-28">7 Jul</p>
+            <p class="x-ax x-ax-29">8 Jul</p>
+            <p class="x-ax x-ax-30">9 Jul</p>
+            <p class="dp dp-dose1 dp-dose1-1"></p>
+            <p class="dp dp-dose1 dp-dose1-2"></p>
+            <p class="dp dp-dose1 dp-dose1-3"></p>
+            <p class="dp dp-dose1 dp-dose1-4"></p>
+            <p class="dp dp-dose1 dp-dose1-5"></p>
+            <p class="dp dp-dose1 dp-dose1-6"></p>
+            <p class="dp dp-dose1 dp-dose1-7"></p>
+            <p class="dp dp-dose1 dp-dose1-8"></p>
+            <p class="dp dp-dose1 dp-dose1-9"></p>
+            <p class="dp dp-dose1 dp-dose1-10"></p>
+            <p class="dp dp-dose1 dp-dose1-11"></p>
+            <p class="dp dp-dose1 dp-dose1-12"></p>
+            <p class="dp dp-dose1 dp-dose1-13"></p>
+            <p class="dp dp-dose1 dp-dose1-14"></p>
+            <p class="dp dp-dose1 dp-dose1-15"></p>
+            <p class="dp dp-dose1 dp-dose1-16"></p>
+            <p class="dp dp-dose1 dp-dose1-17"></p>
+            <p class="dp dp-dose1 dp-dose1-18"></p>
+            <p class="dp dp-dose1 dp-dose1-19"></p>
+            <p class="dp dp-dose1 dp-dose1-20"></p>
+            <p class="dp dp-dose1 dp-dose1-21"></p>
+            <p class="dp dp-dose1 dp-dose1-22"></p>
+            <p class="dp dp-dose1 dp-dose1-23"></p>
+            <p class="dp dp-dose1 dp-dose1-24"></p>
+            <p class="dp dp-dose1 dp-dose1-25"></p>
+            <p class="dp dp-dose1 dp-dose1-26"></p>
+            <p class="dp dp-dose1 dp-dose1-27"></p>
+            <p class="dp dp-dose1 dp-dose1-28"></p>
+            <p class="dp dp-dose1 dp-dose1-29"></p>
+            <p class="dp dp-dose1 dp-dose1-30"></p>
+
+            <p class="dp dp-dose2 dp-dose2-1"></p>
+            <p class="dp dp-dose2 dp-dose2-2"></p>
+            <p class="dp dp-dose2 dp-dose2-3"></p>
+            <p class="dp dp-dose2 dp-dose2-4"></p>
+            <p class="dp dp-dose2 dp-dose2-5"></p>
+            <p class="dp dp-dose2 dp-dose2-6"></p>
+            <p class="dp dp-dose2 dp-dose2-7"></p>
+            <p class="dp dp-dose2 dp-dose2-8"></p>
+            <p class="dp dp-dose2 dp-dose2-9"></p>
+            <p class="dp dp-dose2 dp-dose2-10"></p>
+            <p class="dp dp-dose2 dp-dose2-11"></p>
+            <p class="dp dp-dose2 dp-dose2-12"></p>
+            <p class="dp dp-dose2 dp-dose2-13"></p>
+            <p class="dp dp-dose2 dp-dose2-14"></p>
+            <p class="dp dp-dose2 dp-dose2-15"></p>
+            <p class="dp dp-dose2 dp-dose2-16"></p>
+            <p class="dp dp-dose2 dp-dose2-17"></p>
+            <p class="dp dp-dose2 dp-dose2-18"></p>
+            <p class="dp dp-dose2 dp-dose2-19"></p>
+            <p class="dp dp-dose2 dp-dose2-20"></p>
+            <p class="dp dp-dose2 dp-dose2-21"></p>
+            <p class="dp dp-dose2 dp-dose2-22"></p>
+            <p class="dp dp-dose2 dp-dose2-23"></p>
+            <p class="dp dp-dose2 dp-dose2-24"></p>
+            <p class="dp dp-dose2 dp-dose2-25"></p>
+            <p class="dp dp-dose2 dp-dose2-26"></p>
+            <p class="dp dp-dose2 dp-dose2-27"></p>
+            <p class="dp dp-dose2 dp-dose2-28"></p>
+            <p class="dp dp-dose2 dp-dose2-29"></p>
+            <p class="dp dp-dose2 dp-dose2-30"></p>
+
+            <p class="dp dp-tot dp-tot-1"></p>
+            <p class="dp dp-tot dp-tot-2"></p>
+            <p class="dp dp-tot dp-tot-3"></p>
+            <p class="dp dp-tot dp-tot-4"></p>
+            <p class="dp dp-tot dp-tot-5"></p>
+            <p class="dp dp-tot dp-tot-6"></p>
+            <p class="dp dp-tot dp-tot-7"></p>
+            <p class="dp dp-tot dp-tot-8"></p>
+            <p class="dp dp-tot dp-tot-9"></p>
+            <p class="dp dp-tot dp-tot-10"></p>
+            <p class="dp dp-tot dp-tot-11"></p>
+            <p class="dp dp-tot dp-tot-12"></p>
+            <p class="dp dp-tot dp-tot-13"></p>
+            <p class="dp dp-tot dp-tot-14"></p>
+            <p class="dp dp-tot dp-tot-15"></p>
+            <p class="dp dp-tot dp-tot-16"></p>
+            <p class="dp dp-tot dp-tot-17"></p>
+            <p class="dp dp-tot dp-tot-18"></p>
+            <p class="dp dp-tot dp-tot-19"></p>
+            <p class="dp dp-tot dp-tot-20"></p>
+            <p class="dp dp-tot dp-tot-21"></p>
+            <p class="dp dp-tot dp-tot-22"></p>
+            <p class="dp dp-tot dp-tot-23"></p>
+            <p class="dp dp-tot dp-tot-24"></p>
+            <p class="dp dp-tot dp-tot-25"></p>
+            <p class="dp dp-tot dp-tot-26"></p>
+            <p class="dp dp-tot dp-tot-27"></p>
+            <p class="dp dp-tot dp-tot-28"></p>
+            <p class="dp dp-tot dp-tot-29"></p>
+            <p class="dp dp-tot dp-tot-30"></p>
+          </div>
+          <div class="gr gr-dose-1">
+            <svg class="gr-line-d-1" height="100%" width="100%">
+              <polyline
+                points="30,193 68,193 109,193 147,232 186,183 225,209 264,188 304,199 341,200 381,185 421,203 459,63 499,151 537,114 577,131 614,131 654,130 693,228 732,160 772,199 810,218 849,180 888,180 928,159 966,238 1005,199 1044,204 1084,215 1122,199 1159,220"
+              />
+            </svg>
+          </div>
+          <div class="gr gr-dose-2">
+            <svg class="gr-line-d-2" height="100%" width="100%">
+              <polyline
+                points="30,257 68,257 109,256 147,266 186,253 225,255 264,256 304,255 341,256 381,252 421,261 459,244 499,250 537,250 577,245 614,243 654,243 693,257 732,242 772,245 810,250 849,243 888,236 928,210 966,253 1005,218 1044,238 1084,231 1122,230 1159,238"
+              />
+            </svg>
+          </div>
+          <div class="gr gr-tot">
+            <svg class="gr-line-tot" height="100%" width="100%">
+              <polyline
+                points="30,177 68,177 109,177 147,227 186,170 225,198 264,177 304,177 341,177 381,175 421,193 459,42 499,128 537,99 577,108 614,102 654,100 693,222 732,129 772,177 810,197 849,154 888,153 928,105 966,228 1005,153 1044,176 1084,175 1122,163 1159,190"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <p class="extra"></p>
+    </section>
+
+    <section id="account" class="menu_sec">
+      <div class="logged_out">
+        <div class="pls_log_in">
+          <div class="lock_cont">
+            <svg
+              class="lock"
+              width="20"
+              height="22"
+              viewBox="0 0 20 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17 10H3C1.89543 10 1 10.8954 1 12V19C1 20.1046 1.89543 21 3 21H17C18.1046 21 19 20.1046 19 19V12C19 10.8954 18.1046 10 17 10Z"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M5 10V6C5 4.67392 5.52678 3.40215 6.46447 2.46447C7.40215 1.52678 8.67392 1 10 1C11.3261 1 12.5979 1.52678 13.5355 2.46447C14.4732 3.40215 15 4.67392 15 6V10"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <p class="pls_log_in_txt">Register / Login to continue.</p>
+          <button class="login-reg" onclick="login_pageAppear()">
+            <p>Register / Login</p>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="downloads" class="menu_sec">
+      <div class="logged_out">
+        <div class="pls_log_in">
+          <div class="lock_cont">
+            <svg
+              class="lock"
+              width="20"
+              height="22"
+              viewBox="0 0 20 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17 10H3C1.89543 10 1 10.8954 1 12V19C1 20.1046 1.89543 21 3 21H17C18.1046 21 19 20.1046 19 19V12C19 10.8954 18.1046 10 17 10Z"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M5 10V6C5 4.67392 5.52678 3.40215 6.46447 2.46447C7.40215 1.52678 8.67392 1 10 1C11.3261 1 12.5979 1.52678 13.5355 2.46447C14.4732 3.40215 15 4.67392 15 6V10"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <p class="pls_log_in_txt">Register / Login to continue.</p>
+          <button class="login-reg" onclick="login_pageAppear()">
+            <p>Register / Login</p>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="alerts" class="menu_sec">
+      <div class="logged_out">
+        <div class="pls_log_in">
+          <div class="lock_cont">
+            <svg
+              class="lock"
+              width="20"
+              height="22"
+              viewBox="0 0 20 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17 10H3C1.89543 10 1 10.8954 1 12V19C1 20.1046 1.89543 21 3 21H17C18.1046 21 19 20.1046 19 19V12C19 10.8954 18.1046 10 17 10Z"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M5 10V6C5 4.67392 5.52678 3.40215 6.46447 2.46447C7.40215 1.52678 8.67392 1 10 1C11.3261 1 12.5979 1.52678 13.5355 2.46447C14.4732 3.40215 15 4.67392 15 6V10"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <p class="pls_log_in_txt">Register / Login to continue.</p>
+          <button class="login-reg" onclick="login_pageAppear()">
+            <p>Register / Login</p>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="menu_sec">
+      <div class="about-cont">
+        <img class="logo" src="./assets/vaccine.png" />
+        <p class="title">CoVaccinator-19</p>
+        <p class="desc">
+          The aim of this app is to provide you easy to access information about
+          vaccination trends in India, book your appointment and easy to access
+          your vaccination certificate.
+        </p>
+      </div>
+    </section>
+
+    <section id="login_page">
+      <div class="wrapper">
+        <div class="cross_cont">
+          <div class="cross_box">
+            <svg
+              class="cross"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13 1L1 13"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M1 1L13 13"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="title-text">
+          <div class="title login">Login Form</div>
+          <div class="title signup">Signup Form</div>
+        </div>
+
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked />
+            <input type="radio" name="slide" id="signup" />
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+            <form action="#" class="login">
+              <div class="field">
+                <input type="text" placeholder="Email Address" required />
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required />
+              </div>
+              <div class="pass-link">
+                <a href="#">Forgot password?</a>
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Login" />
+              </div>
+              <div class="signup-link">
+                Not a member? <a href="">Signup now</a>
+              </div>
+            </form>
+            <form action="#" class="signup">
+              <div class="field">
+                <input type="text" placeholder="Email Address" required />
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required />
+              </div>
+              <div class="field">
+                <input
+                  type="password"
+                  placeholder="Confirm password"
+                  required
+                />
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Signup" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="./app.js"></script>
+  </body>
+</html>
