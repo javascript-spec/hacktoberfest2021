@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Trial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<!---***********//Image Hero Section//*************-->
+    <div class="hero-image" ></div>
+    <div class="rellax parallax-el" data-rellax-speed="4"></div>
+    <div class="rellax text" data-rellax-speed="10"></div>
+    <div class="rellax clouds" data-rellax-speed="8"></div>
+    
+
+<!---***********//Section 2 Content//*************-->
+    <div class="whitespace" ></div>
+
+    <div class="rellax content" data-rellax-speed="10">
+        <div class="row content-container">
+
+<!---***********//Text Container//*************-->
+            <div class="col-md-4 text-container">
+                <h4>The Himalayas</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis aut, mollitia veniam fuga quos voluptates obcaecati incidunt, eos iure quidem consequatur provident nemo voluptatem omnis, dolorem itaque repellat quam ut.</p>
+                <a href="#" class="btn explore-btn">Explore More</a>
+            </div>
+
+<!---***********//Image Container//*************-->
+            <div class="col-md-8 image-container">
+                <div class="row">
+                    <div class="col-md-3 image-small">
+                        <img src="/Images/img-left.png" alt=""> 
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/Images/img-mid.png" alt="">
+                    </div>
+                    <div class="col-md-3 image-small">
+                        <img src="/Images/img-right.png" alt="">
+                    </div>
+                </div>
+            </div> 
+        </div>
+        
+    </div>
+    
+
+<!---***********//Javascript File//*************-->
+    <script src="rellax.min.js"></script>
+    <script type="text/javascript">
+            var rellax = new Rellax('.rellax');
+    </script>
+    
+</body>
+</html>

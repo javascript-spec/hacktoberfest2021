@@ -1,0 +1,137 @@
+html , body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+/* Hero Section Start */
+.hero-image{
+    width: 100%;
+    background: url(/Images/4k-wallpaper-adventure-climb-691668.jpg) no-repeat 50% 50%;
+    height: 100vh;
+    background-size: cover;
+    position: absolute;
+}
+
+.parallax-el{
+    background: url(/Images/foreground.png) no-repeat 50% 50%;
+    background-size: contain;
+    position: absolute;
+    width: 100%; 
+    height: 70%;
+    top: 40%;
+}
+
+.text{
+    background: url(/Images/text.png) no-repeat 50% 50%;
+    background-size: contain;
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 42%;
+}
+
+.clouds{
+    background: url(/Images/clouds.png) no-repeat 50% 50%;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+/* Hero Section End */
+
+/* Section-2 Content Start */
+
+.whitespace{
+    width: 100%;
+    height: 100vh;
+}
+
+.content{
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    position: absolute;
+    z-index: 1000;
+}
+
+p{
+    line-height: 40px;
+    text-align: justify;
+}
+
+.content img{
+    width: 100%;
+}
+
+.content .content-container{
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 100px;
+}
+
+.text-container p{
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+.explore-btn{
+    border: 1px solid #e2e2e2 !important;
+    color: #6ab1f3 !important;
+}
+
+.image-container .row{
+    margin-left: 40px;
+    width: 120%;
+}
+
+.image-small{
+    margin-top: 50px;
+}
+
+/* Section-2 Content End */
+
+/* Section-2 Content Media Start */
+
+@media only screen and (max-width: 520px){
+    .parallax-el{
+        background-size: cover;
+        height: 50%;
+    }
+
+    .image-container .row{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .whitespace{
+        height: 86vh;
+    }
+
+    .text{
+        width: 94%;
+        left: 3vw;
+        height: 23vh;
+    }
+
+    .content{
+        padding: 0;
+    }
+
+    .content-container{
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .image-small{
+        margin-top: 5px;
+    }
+}
+
+/* Section-2 Content Media End */
