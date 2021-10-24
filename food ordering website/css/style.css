@@ -1,0 +1,229 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
+/*Navigation Bar: logo and image */
+#logo{
+    margin: 10px 10px;
+}
+
+#logo img{
+    height: 70px;
+    margin: 0px 35px;
+
+}
+
+/* Navigation bar :List styling */
+#navbar::before{
+    content: "" ;
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+
+#navbar ul{
+    display: flex;
+    
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+    font-family: 'MuseoModerno', cursive;
+    /* margin: 10px 10px; */
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+
+#home::before{
+    content: "" ;
+    background: url('../bg.webp') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 441px;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* services section */
+#services{
+   
+    margin: 34px;
+    display: flex;
+    
+}
+#services .box{
+    border: 2px solid lightblue;
+    padding: 20px ;
+    margin: 3px 6px;
+    background-color: rgb(219, 217, 224);
+    border-radius: 28px;
+}
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'MuseoModerno', cursive;
+}
+#client-section{
+    position: relative;
+    height: 344px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../bg.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients img{
+   height: 124px;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+/* contact section */
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box form{
+    font-size: 1.3rem;
+    font-family: 'MuseoModerno', cursive;
+}
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+
+}
+
+
+/* utility classes */
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'MuseoModerno', cursive;
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'MuseoModerno', cursive;
+
+}
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+    color: black;
+    margin-top: 120px;
+    font-family: 'MuseoModerno', cursive;
+}
+.h-secondary{
+    font-size: 1.2rem;
+    padding: 12px;
+    font-family: 'MuseoModerno', cursive;
+   
+    text-align: center;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    opacity: 0.9;
+    border-radius: 10px;
+    cursor: pointer;
+   
+}
+
