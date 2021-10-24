@@ -1,0 +1,29 @@
+{
+  "name": "normalize-css",
+  "description": "A modern alternative to CSS resets",
+  "main": "normalize.css",
+  "authors": [
+    "Jonathan Neal <jonathantneal@hotmail.com> (http://jonathantneal.com/)",
+    "Nicolas Gallagher <nicolas@nicolasgallagher.com> (http://nicolasgallagher.com/)"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "package.json",
+    "README.md",
+    "test.html"
+  ],
+  "homepage": "https://github.com/necolas/normalize.css",
+  "version": "6.0.0",
+  "_release": "6.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "6.0.0",
+    "commit": "9fabe4c4b7c213750889e75d81c7e531fad95d89"
+  },
+  "_source": "https://github.com/necolas/normalize.css.git",
+  "_target": "^6.0.0",
+  "_originalSource": "normalize-css",
+  "_direct": true
+}
