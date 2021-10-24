@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  font-family: poppins;
+  font-weight: 500;
+}
+
+.brand{
+    text-decoration: none;
+    color: white;
+    font-size: clamp(0.2rem,5vw,2rem);
+    font-family: fantasy;
+    letter-spacing: 2px;
+    padding: 1rem;
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li{
+    list-style-type: none;
+    color: white;
+    font-family: monospace;
+    font-size: clamp(0.2rem,5vw,1.1rem);
+    padding: 1.5rem;
+    cursor: pointer;
+
+}
+nav>ul>li{
+    display: inline-block;
+    
+}
+li:hover{
+    color: rgb(209, 205, 205);
+}
+nav>ul{
+    display: flex;
+}
+.contactForm{
+    width: 40vw;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.233);
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    z-index: 99;
+}
+input{
+    display: block;
+    margin:  0.5rem 0;
+   width: 100%; 
+}
+button{
+    display: block;
+    font-family: monospace;
+    background-color: white;
+    border: none;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+textarea{
+    width: 100%;
+}
+form{
+    padding: 1.5rem;
+}
+#footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 5vh;
+    background-color: rgba(255, 255, 255, 0.274);
+}
+.footer{
+    padding-bottom:2rem;
+    padding-top:2rem;
+    
+}
+.footer>a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 2rem;
+    
+    
+}
+@media(max-width:600px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+}
