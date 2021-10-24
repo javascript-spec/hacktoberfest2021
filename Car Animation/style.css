@@ -2,6 +2,8 @@ body{
 	margin:0;
 	color:#444;
 	font:300 18px/18px Roboto, sans-serif;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body{text-align:center;padding:80px;overflow:hidden}
