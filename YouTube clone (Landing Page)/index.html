@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Youtube clone</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <a href="#">
+      <img src="./images/YouTube-Logo.png" alt="Youtube logo" class="youtube-logo">
+    </a>
+    <form class="search-bar" action="index.html" method="post">
+      <input type="search" class="search-input" name="" value="" placeholder="Search" area-label="Search">
+      <button type="Submit" name="button" class="search-btn">
+        <img src="./images/search_black_24dp.svg" alt="">
+      </button>
+      <a href="#">
+        <img class="voice-search" src="./images/keyboard_voice_black_24dp.svg" alt="voice search">
+      </a>
+    </form>
+    <div class="menu-icons">
+      <a href="#">
+        <img src="./images/video_call_black_24dp.svg" alt="upload video">
+      </a>
+      <a href="#">
+        <img src="./images/apps_black_24dp.svg" alt="Apps">
+      </a>
+      <a href="#">
+        <img src="./images/notifications_none_black_24dp.svg" alt="Bell icon">
+      </a>
+      <a href="#">
+        <img class="menu-channel-icon" src="https://yt3.ggpht.com/V7QhIkQAG7EdVaL7ztzrPcuOt9Pm9Hc0la2I3_6S92SAjm8xGxlInx0J640JTwe0JF1ey0jhxyQ=s88-c-k-c0x00ffffff-no-rj-mo" alt="Your channel">
+      </a>
+    </div>
+  </header>
+  <div class="categories">
+    <section class="categories-section">
+      <button type="button" name="button" class="category active">All</button>
+      <button type="button" name="button" class="category">art</button>
+      <button type="button" name="button" class="category">Computer Science</button>
+      <button type="button" name="button" class="category">Blender</button>
+      <button type="button" name="button" class="category">Comedies</button>
+      <button type="button" name="button" class="category">Adobe</button>
+      <button type="button" name="button" class="category">Podcast</button>
+      <button type="button" name="button" class="category">GitHub</button>
+      <button type="button" name="button" class="category">Baking</button>
+      <button type="button" name="button" class="category">Music</button>
+      <button type="button" name="button" class="category">Live</button>
+      <button type="button" name="button" class="category">Mixes</button>
+      <button type="button" name="button" class="category">Apple</button>
+      <button type="button" name="button" class="category">Superheroes</button>
+      <button type="button" name="button" class="category">Maya</button>
+    </section>
+  </div>
+  <div class="videos">
+    <section class="video-section">
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="3:51">
+          <img class="thumbnail-img" src="https://i.ytimg.com/vi/1poXN3jF3Bw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD-8OYBU1Qre_vOWL5tEW8XAG6YAA" alt="">
+        </a>
+        <div class="bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/GhSdoZRJdjmNzouACxXIHjRt8rUHswGmXSZsYYTNKNQJ5-wVNsp3cCbjkUN35H7VXf5o0eVxvw=s68-c-k-c0x00ffffff-no-rj" alt="">
+          </a>
+
+          <div class="video-details">
+            <a href="#" class="video-title">Mann Bharryaa 2.0 – Official Video | Shershaah | Sidharth – </a>
+            <a href="#" class="video-channel-name">Sony Music India
+            </a>
+            <div class="meta-data">
+              <span>61M views</span>
+              •
+              <span>3 week ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="1:00">
+          <img class="thumbnail-img" src="https://i.ytimg.com/vi/2_DEgjgkBX0/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCF3fA_0TRdRbxp4Cdc7mJqhuSL-w" alt="">
+        </a>
+        <div class="bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AKedOLTlTDoTeWcMpue7Ph9_1wjO4sBPJdBs8krzU6puvw=s68-c-k-c0x00ffffff-no-rj" alt="">
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">How to Propose | INDIAN BOY ON OMEGLE</a>
+            <a href="#" class="video-channel-name">belikeeaabirr</a>
+            <div class="meta-data">
+              <span>122k views</span>
+              •
+              <span>1 day ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="2:24">
+          <img class="thumbnail-img" src="https://i.ytimg.com/vi/abmjDCk_wVQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJqLuEnqh-lGhXTyPydgwCanYz7A" alt="">
+        </a>
+        <div class="bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AKedOLSzppAKCZ6MXiise96UARDD7tcg5-aTMSzCJqqsZw=s68-c-k-c0x00ffffff-no-rj" alt="">
+          </a>
+
+          <div class="video-details">
+            <a href="#" class="video-title">Veg Lasagna Recipe | Valentine's Day Special | Chef Sanjyot Keer</a>
+            <a href="#" class="video-channel-name">Your Food Lab</a>
+            <div class="meta-data">
+              <span>1.5M views</span>
+              •
+              <span>6 months ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-img" src="https://i.ytimg.com/vi/s-bZD3O3P80/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCG-EEDhB5Wj20dsZ1gKt4kLcDNfQ" alt="">
+        </a>
+        <div class="bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ky0CwZcFhzZSVH3BKP3YANdodGaQRDzC9pEYY2HvfB2QpEoEmsYBCmvH4f0OjNpkVcIhO8d8aA=s88-c-k-c0x00ffffff-no-rj" alt="">
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Bollywood mashup</a>
+            <a href="#" class="video-channel-name">Bollywood</a>
+            <div class="meta-data">
+              <span>131k views</span>
+              •
+              <span>21 hours ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="5:00">
+          <img class="thumbnail-img" src="https://i.ytimg.com/vi/XAcjgEI4zJo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCGBk6ghuphPkogMTU6a8kdQep7qg" alt="">
+        </a>
+        <div class="bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AKedOLSK4FxUjWmSRUtrfVKyx9SQVSCr190FTquh903FRQ=s176-c-k-c0x00ffffff-no-rj-mo" alt="">
+          </a>
+
+          <div class="video-details">
+            <a href="#" class="video-title">AMAZING Before After Results from Chloe Ting Challenges | G..</a>
+            <a href="#" class="video-channel-name">
+              Chloe Ting
+            </a>
+            <div class="meta-data">
+              <span>1.2M view</span>
+              •
+              <span>2 weeks ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="4:20">
+          <img class="thumbnail-img" src="./images/chole.png" alt="">
+        </a>
+        <div class="bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/JzVx92UYhDSD7bm0hWaY7knLoUfBZk_PEbi5DtXrXtVLvvpvmP3dFgtnspLmfrqW_r1U6vFmTA=s88-c-k-c0x00ffffff-no-rj" alt="">
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Amritsari Choley | अमृतसरी छोले | Chef Ranveer Brar</a>
+            <a href="#" class="video-channel-name">
+              Chef Ranveer Brar
+            </a>
+            <div class="meta-data">
+              <span>1k views</span>
+              •
+              <span>1 day ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="22:24">
+          <img class="thumbnail-img" src="https://i.ytimg.com/vi/faYZCdHF2Bo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA1NXf_eiIKOKo_PWjKLi98KDUQ9Q" alt="">
+        </a>
+        <div class="bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AKedOLT8lPww4yr7p0kzMAAuW_BaeTZ3M633y2loWuQeXg=s68-c-k-c0x00ffffff-no-rj" alt="">
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Learn football skills</a>
+            <a href="#" class="video-channel-name">TKHD</a>
+            <div class="meta-data">
+              <span>100k views</span>
+              •
+              <span>2 weeks ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="8:30">
+          <img class="thumbnail-img" src="https://i.ytimg.com/vi/DNOoIPYW5Js/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDLalThEhRBjAmyedoU2DYHvUx7ww" alt="">
+        </a>
+        <div class="bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AKedOLR7iRGvd0oNE4ie3UDcJrmjGILVhemVkrRSAr8OEA=s68-c-k-c0x00ffffff-no-rj" alt="">
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">After Effects Tutorial | Glowing Animations Effects</a>
+            <a href="#" class="video-channel-name">Adobe</a>
+            <div class="meta-data">
+              <span>12M views</span>
+              •
+              <span>1 year ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="video-section">
+      <h2 class="video-section-title">COVID-19 news
+        <button type="button" class="video-section-title-close" name="button">
+          &times;
+        </button>
+      </h2>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="2:20">
+          <img class="thumbnail-img" src="./images/thumnail1.png" alt="">
+        </a>
+        <div class="bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AKedOLQCtPZt34KOychWaimtJec24Nsb-AbyYTTzzJ7grA=s68-c-k-c0x00ffffff-no-rj" alt="">
+          </a>
+
+          <div class="video-details">
+            <a href="#" class="video-title">Coronavirus India Update: लगातार कोरोनावायरस के नए मामले 30..</a>
+            <a href="#" class="video-channel-name">Punjab Kesari TV</a>
+            <div class="meta-data">
+              <span>1.2M views</span>
+              •
+              <span>2 week ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="6:01">
+          <img class="thumbnail-img" src="./images/thumnail2.png" alt="">
+        </a>
+        <div class="bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AKedOLQCtPZt34KOychWaimtJec24Nsb-AbyYTTzzJ7grA=s68-c-k-c0x00ffffff-no-rj" alt="">
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Covid-19 News Update: कोरोनावायरस से बच्चों को कै..</a>
+            <a href="#" class="video-channel-name">Punjab Kesari TV</a>
+            <div class="meta-data">
+              <span>512K view</span>
+              •
+              <span>1 month ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="2:13">
+          <img class="thumbnail-img" src="./images/t5.png" alt="">
+        </a>
+        <div class="bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AKedOLT8qOCJdWX8MPenH2XrF_sVpJ7DN2f-o7N_FuHTjw=s68-c-k-c0x00ffffff-no-rj" alt="">
+          </a>
+
+          <div class="video-details">
+            <a href="#" class="video-title">Coronavirus India Update: कोरोनावायरस की तीसरी लहर का..</a>
+            <a href="#" class="video-channel-name">Dainik Jagran - दैनिक जागरण</a>
+            <div class="meta-data">
+              <span>100k views</span>
+              •
+              <span>2 hours ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="9:04">
+          <img class="thumbnail-img" src="./images/t4.png" alt="">
+        </a>
+        <div class="bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AKedOLT8qOCJdWX8MPenH2XrF_sVpJ7DN2f-o7N_FuHTjw=s68-c-k-c0x00ffffff-no-rj" alt="">
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Coronavirus India Update: कोरोनावायरस का Recovery Ra..</a>
+            <a href="#" class="video-channel-name">Dainik Jagran - दैनिक जागरण</a>
+            <div class="meta-data">
+              <span>120k views</span>
+              •
+              <span>3 weeks ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="8:05">
+          <img class="thumbnail-img" src="./images/t3.png" alt="">
+        </a>
+        <div class="bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AKedOLT8qOCJdWX8MPenH2XrF_sVpJ7DN2f-o7N_FuHTjw=s68-c-k-c0x00ffffff-no-rj" alt="">
+          </a>
+
+          <div class="video-details">
+            <a href="#" class="video-title">Coronavirus India Update: कोविड-19 के 26 हजार नए केस..</a>
+            <a href="#" class="video-channel-name">Dainik Jagran - दैनिक जागरण</a>
+            <div class="meta-data">
+              <span>131k views</span>
+              •
+              <span>2 weeks ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="5:06">
+          <img class="thumbnail-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoqzDFMhD5nrpw_y6rp57exd0dNyHStH73gw&usqp=CAU" alt="">
+        </a>
+        <div class="bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AKedOLT8qOCJdWX8MPenH2XrF_sVpJ7DN2f-o7N_FuHTjw=s68-c-k-c0x00ffffff-no-rj" alt="">
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Covid-19 News Update: कोरोनावायरस वैक्सीन कोविशीले..</a>
+            <a href="#" class="video-channel-name">Dainik Jagran - दैनिक जागरण</a>
+            <div class="meta-data">
+              <span>1.2M views</span>
+              •
+              <span>7 months ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="2:34">
+          <img class="thumbnail-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWfYJ26bW2guCsCIj9Gf36nQQaM-NIo2Lfwg&usqp=CAU" alt="">
+        </a>
+        <div class="bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AKedOLQc_FdlYM4eSBKO7y_br5QxU5A8yXwbv5gmN5d7=s68-c-k-c0x00ffffff-no-rj" alt="">
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Coronavirus India Update : 24 घंटे में दर्ज 30773 नए केस, दुनि..</a>
+            <a href="#" class="video-channel-name">inKhabar</a>
+            <div class="meta-data">
+              <span>1M views</span>
+              •
+              <span>2 days ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="3:55">
+          <img class="thumbnail-img" src="./images/last.png" alt="">
+        </a>
+        <div class="bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/AKedOLT7XRKaTLjF0iR7IFr36PTv-fjRNyKIpP8jKoSygw=s68-c-k-c0x00ffffff-no-rj" alt="">
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Coronavirus India Update : 24 घंटे में 24,897 नए मामले | 251 कोरो...</a>
+            <a href="#" class="video-channel-name">IBC24</a>
+            <div class="meta-data">
+              <span>1k views</span>
+              •
+              <span>6 days ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+</body>
+
+</html>
