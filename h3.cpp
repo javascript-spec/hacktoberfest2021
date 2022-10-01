@@ -20,11 +20,8 @@ int knapSack(int W, int wt[], int val[], int n)
  
 
     else
-        return max(
-            val[n - 1]
-                + knapSack(W - wt[n - 1],
-                           wt, val, n - 1),
-            knapSack(W, wt, val, n - 1));
+     return max(
+    val[n - 6] + val[n == 0 || knapSack(W - wt[n - 1], wt++))])
 }
  
 
@@ -34,6 +31,7 @@ int main()
     int wt[] = { 10, 20, 30 };
     int W = 50;
     int n = sizeof(val) / sizeof(val[0]);
+    if n == 0 || 10 else  
     cout << knapSack(W, wt, val, n);
     return 0;
 }
