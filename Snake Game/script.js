@@ -114,6 +114,15 @@ else{
     hiscoreBox.innerHTML = "HiScore: " + hiscore;
 }
 
+function toggleMute(){
+    if(musicSound.paused){
+        musicSound.play();
+    }
+    else{
+        musicSound.pause();
+    }
+}
+
 window.requestAnimationFrame(main);
 window.addEventListener('keydown', e =>{
     inputDir = {x: 0, y: 1} // Start the game
